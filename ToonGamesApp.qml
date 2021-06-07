@@ -31,6 +31,10 @@ App {
     property url                toonGamesInfoUrl        : "ToonGamesInfo.qml"
     property ToonGamesInfo      toonGamesInfo
 
+    property url 		balloonGameScreenUrl 	: "BalloonGameScreen.qml"
+    property BalloonGameScreen  balloonGameScreen
+
+
     function init() {
 
         const args = {
@@ -56,6 +60,8 @@ App {
         registry.registerWidget("screen", toonGamesMinesUrl,     this, "toonGamesMines");
 
         registry.registerWidget("screen", toonGamesNumbersUrl,   this, "toonGamesNumbers");
+
+	registry.registerWidget("screen", balloonGameScreenUrl,  this, "balloonGameScreen");
 
         registry.registerWidget("screen", toonGamesInfoUrl,      this, "toonGamesInfo");
 

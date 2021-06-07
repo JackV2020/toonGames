@@ -224,7 +224,7 @@ Tile {
 
     YaLabel {
         id                      : game8
-        buttonText              : "Info"
+        buttonText              : "Balloon!"
         height                  : gameHeight
         width                   : gameWidth
         buttonActiveColor       : buttonSelectedColor
@@ -239,7 +239,7 @@ Tile {
         }
         onClicked: {
             activeMe = false
-            stage.openFullscreen(app.toonGamesInfoUrl);
+            stage.openFullscreen(app.balloonGameScreenUrl);
         }
         visible                 : !dimState
     }
